@@ -1,4 +1,31 @@
-.card-details {
+.quiz-container {
+    width: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px;
+
+}
+
+.quiz-container img {
+    height: 85%;
+    width: 100%;
+    background-color: rgb(221, 224, 226);
+
+
+}
+
+.quiz-details {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.quiz-details button {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    text-decoration: none;
 }

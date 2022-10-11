@@ -19,7 +19,7 @@ const Home = () => {
                 </h6>
                 <button className='btn btn-dark text-white rounded mb-5'>Join Now</button>
             </div>
-            <div className='home'>
+            <div className='container'>
 
                 {
                     quizzes.data.map(quiz => <Quiz key={quiz.id} quiz={quiz} />)
