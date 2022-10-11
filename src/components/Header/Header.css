@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .brand {
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.me-auto a {
+    text-decoration: none;
+    color: rgba(245, 238, 238, 0.87);
+    margin-right: 20px;
+}
+
+.me-auto a:hover {
+    color: rgba(177, 167, 167, 0.87);
+}
