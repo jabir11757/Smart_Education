@@ -6,10 +6,11 @@ import "react-toastify/dist/ReactToastify.css"
 //     toast("first toast");
 // }
 
-const Toast = ({ answerHandler }) => {
+const Toast = ({ answerHandler, handleChange }) => {
     return (
         <div>
             {answerHandler}
+            {handleChange}
             <ToastContainer />
         </div>
     );

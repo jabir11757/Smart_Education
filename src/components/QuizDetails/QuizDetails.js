@@ -9,6 +9,8 @@ import Toast from '../Toast/Toast';
 const QuizDetails = ({ topics }) => {
     const { question, options, correctAnswer } = topics;
 
+    const splitedQ = question.replace('<p>', '').replace('</p>', '');
+
     const answerHandler = () => {
         toast(correctAnswer);
     }
@@ -16,7 +18,7 @@ const QuizDetails = ({ topics }) => {
     return (
         <div className='questions-container'>
             <div className='queIcon'>
-                <h6 className='mx-4 my-4'>{question}</h6>
+                <h6 className='mx-4 my-4'>{splitedQ}</h6>
                 <EyeIcon onClick={answerHandler} className='icon' />
             </div>
             <div className='options-container'>
@@ -25,6 +27,7 @@ const QuizDetails = ({ topics }) => {
                         options.map(option => <Card
                             key={option.id}
                             option={option}
+                            correctAnswer={correctAnswer}
                         />)
                     }
                 </div>
