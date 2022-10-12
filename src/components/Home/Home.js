@@ -7,7 +7,7 @@ const Home = () => {
     const quizzes = useLoaderData();
 
 
-    console.log(quizzes)
+    // console.log(quizzes)
     return (
         <div>
             <div className='home-bg'>

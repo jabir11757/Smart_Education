@@ -1,9 +1,11 @@
 import React from 'react';
 
 const QuizDetails = ({ topics }) => {
-    const { correctAnswer, id, question } = topics.data.questions;
+    const { correctAnswer, id, question, options } = topics.data.questions;
 
-    console.log(question)
+    console.log("question")
+
+
     return (
         <div>
             {/* <h2>{questions.length} </h2> */}

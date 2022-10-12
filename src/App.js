@@ -39,6 +39,9 @@ function App() {
         {
           path: '/blog',
           element: <Blog />
+        },
+        {
+          path: '*', element: <div> Ufffs..! This route not founded. 404.</div>
         }
       ]
     }
