@@ -19,6 +19,14 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+###
+
+# This project made for education of SSC/JSC candidates, where they can attempt quiz and show the answers!
+# Answer will be showed by toast, which will show after click eye button on top-right corner!
+# Bootstrap used only as css framework!
+
+###
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
