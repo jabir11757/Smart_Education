@@ -16,10 +16,14 @@ function App() {
       children: [
         {
           path: '/home',
+          element: <Home />
+        },
+        {
+          path: '/topics',
           loader: () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
-          element: <Home />
+          element: <Topics />
         },
         {
           path: '/quiz/:quizId',
@@ -31,10 +35,6 @@ function App() {
         {
           path: '/statistics',
           element: <Statistics />
-        },
-        {
-          path: '/topics',
-          element: <Topics />
         },
         {
           path: '/blog',

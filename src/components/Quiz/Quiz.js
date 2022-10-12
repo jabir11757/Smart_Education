@@ -8,8 +8,6 @@ const Quiz = ({ quiz }) => {
     return (
 
         <div className='quiz-container shadow p-3 mb-5 bg-body rounded'>
-
-
             <img src={logo} alt='' />
 
             <div className='quiz-details'>

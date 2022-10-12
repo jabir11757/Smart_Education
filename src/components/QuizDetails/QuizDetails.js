@@ -16,11 +16,11 @@ const QuizDetails = ({ topics }) => {
     return (
         <div className='questions-container'>
             <div className='queIcon'>
-                <h6>{question}</h6>
+                <h6 className='mx-4 my-4'>{question}</h6>
                 <EyeIcon onClick={answerHandler} className='icon' />
             </div>
             <div className='options-container'>
-                <div className='card'>
+                <div className='card shadow p-3 mb-5 bg-body rounded'>
                     {
                         options.map(option => <Card
                             key={option.id}
