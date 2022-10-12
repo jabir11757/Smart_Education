@@ -1,49 +1,50 @@
 import React from 'react';
+import './QuizDetails.css'
+import { EyeIcon } from '@heroicons/react/24/solid'
+import Card from '../Card/Card';
+import { toast } from 'react-toastify';
+import Toast from '../Toast/Toast';
+
 
 const QuizDetails = ({ topics }) => {
     const { question, options, correctAnswer } = topics;
 
-    console.log(topics)
-
-
+    const answerHandler = () => {
+        toast(correctAnswer);
+    }
 
     return (
-        <div>
-            <h6>{question}</h6>
-            <div className="row row-cols-2">
-                <div className="col">
-                    <div className="form-check">
-                        <input className="form-check-input" type="radio" />
-                    </div>
-                    <p>{options[0]}</p>
-                </div>
+        <div className='questions-container'>
+            <div className='queIcon'>
+                <h6>{question}</h6>
+                <EyeIcon onClick={answerHandler} className='icon' />
             </div>
-            <div className="row row-cols-2">
-                <div className="col">
-                    <div className="form-check">
-                        <input className="form-check-input" type="radio" />
-                    </div>
-                    <p>{options[1]}</p>
+            <div className='options-container'>
+                <div className='card'>
+                    {
+                        options.map(option => <Card
+                            key={option.id}
+                            option={option}
+                        />)
+                    }
                 </div>
-            </div>
-            <div className="row row-cols-2">
-                <div className="col">
-                    <div className="form-check">
-                        <input className="form-check-input" type="radio" />
-                    </div>
-                    <p>{options[2]}</p>
-                </div>
-            </div>
-            <div className="row row-cols-2">
-                <div className="col">
-                    <div className="form-check">
-                        <input className="form-check-input" type="radio" />
-                    </div>
-                    <p>{options[3]}</p>
-                </div>
+                <Toast answerHandler={answerHandler} />
+
+
             </div>
         </div>
+
+
+
+
+
     );
+
 };
 
+
+
 export default QuizDetails;
+
+
+

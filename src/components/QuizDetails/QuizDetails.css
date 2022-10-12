@@ -1,0 +1,13 @@
+.queIcon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.queIcon .icon {
+    height: 30px;
+    width: 30px;
+}
+
+.card {
+    border: 2px solid aliceblue;
+}
