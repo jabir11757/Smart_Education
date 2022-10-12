@@ -1,0 +1,10 @@
+.home-bg {
+    background-image: url(/background.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-bg button:hover {
+    color: azure;
+}

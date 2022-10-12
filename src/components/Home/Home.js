@@ -10,9 +10,9 @@ const Home = () => {
     console.log(quizzes)
     return (
         <div>
-            <div>
-                <h3 className='mt-4'>Intro</h3>
-                <h6 className='my-4'>It's a Big platform to increase knowledge.
+            <div className='home-bg'>
+                <h3 className='text-white'>Intro</h3>
+                <h6 className='my-4 text-white'>It's a Big platform to increase knowledge.
                     Anyone can attend here to spread out him/herself.
                     So, its a big opportunity for all students.
                     Please, don't be late to join with us.
