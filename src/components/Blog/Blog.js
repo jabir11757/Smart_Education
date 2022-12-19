@@ -6,7 +6,7 @@ const Blog = () => {
     return (
         <div className='blog-container'>
 
-            <h2 className='mb-5 text-success'>We need to know</h2>
+            <h2 className='mb-5 text-success text-2xl font-bold'>We need to know</h2>
             <Accordion >
                 <Accordion.Item eventKey="0">
                     <Accordion.Header><p className='fw-bold'>What is the purpose of react router ?</p></Accordion.Header>

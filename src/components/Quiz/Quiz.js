@@ -11,10 +11,12 @@ const Quiz = ({ quiz }) => {
             <img src={logo} alt='' />
 
             <div className='quiz-details'>
-                <p><small>{name}</small></p>
-                <p><small>Quizzes: {total}</small></p>
+                <div className='flex mt-2'>
+                    <p className='me-2 font-bold'><small>{name}</small></p>
+                    <p><small>Quizzes: {total}</small></p>
+                </div>
                 <Link to={`/quiz/${id}`} className='button'>
-                    <button className='btn btn-dark'>Start</button>
+                    <button className='btn btn-outline'>Start</button>
                 </Link>
             </div>
         </div>

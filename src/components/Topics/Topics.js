@@ -8,6 +8,8 @@ const Topics = () => {
 
     return (
         <div>
+            <h1 className='text-2xl font-bold my-16'>Course Topics</h1>
+
             <div className='container'>
 
                 {

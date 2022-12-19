@@ -16,16 +16,6 @@ const Card = ({ option, correctAnswer }) => {
         }
     }
 
-    //     // let selectedAnswer = e.target.value;
-    //     // if (selectedAnswer === correctAnswer) {
-    //     //    
-    //     // }
-    //     // else {
-    //     //     toast('Wrong Answer, Mair khaba ?');
-    //     // }
-    // }
-
-
 
     return (
         <div className='card-container '>

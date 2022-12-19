@@ -1,4 +1,5 @@
 import React from 'react';
+import CourseVideo from '../CourseVideo/CourseVideo'
 import './Home.css'
 
 const Home = () => {
@@ -6,15 +7,10 @@ const Home = () => {
         <div>
             <div className='home-bg'>
                 <div className='home-container'>
-                    <h3>Intro</h3>
-                    <h6 className='my-4'>It's a Big platform to increase knowledge.
-                        Anyone can attend here to spread out him/herself.
-                        So, its a big opportunity for all students.
-                        Please, don't be late to join with us.
-                    </h6>
-                    <button className='btn btn-dark text-white rounded mb-5'>Join Now</button>
+                    <h6 className='text-3xl'>Stay with <span className='font-bold text-success'>Smart Education</span> & stay hungry to grab knowledge.</h6>
                 </div>
             </div>
+            <CourseVideo />
         </div>
     );
 };
